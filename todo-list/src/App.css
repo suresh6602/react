@@ -1,0 +1,96 @@
+.App{
+  text-align: center;
+  background-color:#FBFBFB;
+}
+
+/* .one-div {
+  box-sizing: content-box;
+  width: 100%;
+  border: 1px solid black;
+  padding: 0px;
+} */
+
+input {
+  /* padding: 10px; */
+  width: 30%;
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.input-group{
+  /* margin-top: 30px; */
+  text-align: center;
+}
+
+button {
+  padding: 10px 10px;
+  margin-left: 10px;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.message{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 38%; 
+  margin-right: 40px;
+}
+
+.list-value{
+  margin-left: 10px;
+}
+
+.list-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.list-checkbox {
+  margin-right: 10px; 
+  width: 60px;
+}
+
+.footer {
+  background-color:#D7DADF;
+  /* border-top: 2px solid red; */
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  color: black;
+  font-size: 20px;
+  padding: 1px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .list-item {
+    width: 100%;
+  }
+}
