@@ -1,4 +1,4 @@
-import "./Todo.css"
+// import "./Todo.css"
 import DeleteOutlineOutlinedIcon from '@mui/icons-material/DeleteOutlineOutlined';
 import ModeEditOutlinedIcon from '@mui/icons-material/ModeEditOutlined';
 import Tooltip from '@mui/material/Tooltip';
@@ -74,20 +74,24 @@ function MyComponent() {
   };
 
   return (
-    <div className="one-div">
+    <div className='parent-div'>
+
+<div className="one-div">
       <div className="input-group">
-        <input
-          className="input-field"
-          type="text"
-          placeholder=" Enter Task..."
-          value={inputValue}
-          onChange={handleInputChange}
-        />
-        <Tooltip title="Add task">
-        <button className="submit-btn" onClick={handleButtonClick}>
-          {editIndex !== null ? 'Update' : 'Submit'}
-        </button>
-        </Tooltip> 
+        <div className="input-wrapper">
+          <input
+            className="input-field"
+            type="text"
+            placeholder=" Enter Task..."
+            value={inputValue}
+            onChange={handleInputChange}
+          />
+          <Tooltip title="Add task">
+            <button className="submit-btn" onClick={handleButtonClick}>
+              {editIndex !== null ? 'Update' : 'Submit'}
+            </button>
+          </Tooltip>
+        </div> 
       </div>
       <div className="message">{message}</div>
       <div >{checkmessage}</div>
@@ -98,7 +102,7 @@ function MyComponent() {
             <li key={index} className="list-item">
               
               <div className="list-item-content">
-              <div className="list-checkbox">
+                <div className="list-checkbox">
                   <input
                     type="checkbox"
                     value={isSubscribed}
@@ -117,7 +121,7 @@ function MyComponent() {
                   </Tooltip>
                 )}
                 <Tooltip title="Delete">
-                <span onClick={() => removetext(index)}><DeleteOutlineOutlinedIcon/></span>
+                  <span onClick={() => removetext(index)}><DeleteOutlineOutlinedIcon/></span>
                 </Tooltip>
               </div>
             </li>
@@ -125,6 +129,8 @@ function MyComponent() {
         })}
       </ul>
     </div>
+    </div>
+
   );
 }
 

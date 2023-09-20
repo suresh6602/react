@@ -8,10 +8,9 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <h1>To-do List</h1>
       <MyComponent/>
       <Footer/>
-   </div>
+    </div>
   );
 }
 

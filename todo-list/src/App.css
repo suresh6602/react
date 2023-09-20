@@ -1,25 +1,32 @@
+.parent-div{
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+}
+
+
 .App{
   text-align: center;
   background-color:#FBFBFB;
 }
 
-/* .one-div {
-  box-sizing: content-box;
-  width: 100%;
+.one-div {
   border: 1px solid black;
-  padding: 0px;
-} */
+  border-radius: 5px;
+  margin-top: 30px;
+  width: 500px;
+  min-height: 70vh;
+ 
+}
 
 input {
-  /* padding: 10px; */
-  width: 30%;
+  width: 80%;
   border-radius: 5px;
   height: 30px;
   border: 1px solid black;
 }
 
 .input-group{
-  /* margin-top: 30px; */
   text-align: center;
 }
 
@@ -31,7 +38,7 @@ button {
 ul{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 
@@ -55,12 +62,12 @@ button {
 .list-item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   border: 1px solid black;
   border-radius: 5px;
   margin-bottom: 10px;
-  width: 38%; 
-  margin-right: 40px;
+  width: 100%; 
+  /* margin-right: 40px; */
 }
 
 .list-value{
@@ -74,23 +81,27 @@ button {
 
 .list-checkbox {
   margin-right: 10px; 
-  width: 60px;
+  width: 30px;
 }
 
 .footer {
-  background-color:#D7DADF;
-  /* border-top: 2px solid red; */
-  /* position: fixed; */
+  background-color:#19489b;
   width: 100%;
   bottom: 0;
-  color: black;
+  color: white;
   font-size: 20px;
-  padding: 1px;
+  padding: 10px 0;
   margin-top: 10px;
 }
 
+ul{
+  padding: 10px;
+}
 @media (max-width: 768px) {
   .list-item {
     width: 100%;
+  }
+  .input-field{
+    width: 73%;
   }
 }

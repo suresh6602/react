@@ -22,7 +22,7 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h5" component="div" sx={{ flexGrow: 1,color: 'white', textAlign: 'left' }}>
-          
+          <strong>Todo-List</strong>
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>
